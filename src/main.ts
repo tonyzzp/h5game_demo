@@ -1,5 +1,5 @@
-import { core } from "./core"
-import { Image } from "./image"
+import { core } from "./engine/core"
+import { Image } from "./engine/image"
 
 console.log("main.ts run")
 

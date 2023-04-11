@@ -7,6 +7,9 @@ module.exports = {
         path: __dirname
     },
     mode: "development",
+    devtool: 'inline-source-map',
+    devServer: {
+    },
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
     },
@@ -18,5 +21,5 @@ module.exports = {
                 exclude: /node_modules/,
             }
         ]
-    }
+    },
 };
