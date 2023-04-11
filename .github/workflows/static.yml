@@ -39,10 +39,6 @@ jobs:
           npm i -g pnpm
           pnpm install
           pnpm run build
-          mkdir dist
-          cp index.html dist/
-          cp bundle.js dist/
-          cp -r res dist/
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
