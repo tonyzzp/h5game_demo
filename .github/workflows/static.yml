@@ -17,14 +17,14 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: dump info
         run: |
-          echo ${{ steps.deployment.outputs.page_url }}
+          echo "github context: ${{ toJson(github) }}"
+          echo "env context: ${{ toJson(env) }}"
+          echo "job context: ${{ toJson(job) }}"
+          echo "runner context: ${{ toJson(runner) }}"
       - name: Checkout
         uses: actions/checkout@v4.2.2
         
