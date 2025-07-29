@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "es6",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "resolveJsonModule": true,
+    "module": "es6",
     "allowJs": true,
     "checkJs": true,
     "isolatedModules": true,
-    "moduleResolution": "nodenext",
     "types": [
       "vite/client"
     ]
